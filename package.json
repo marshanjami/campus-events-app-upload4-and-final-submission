@@ -1,0 +1,23 @@
+{
+  "name": "campus-life-webapp",
+  "version": "1.0.0",
+  "description": "Campus Life Web App for IST4035 Advanced Web Coursework",
+  "type": "module",
+
+  "scripts": {
+  "dev": "npx serve public",
+  "lint:html": "htmlhint public/**/*.html",
+  "lint:css": "stylelint \"public/css/**/*.css\"",
+  "lint": "npm run lint:html && npm run lint:css",
+  "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+  "audit": "npm audit --audit-level=moderate",
+  "audit:fix": "npm audit fix"
+},
+
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "jest": "^29.7.0"
+  }
+}
